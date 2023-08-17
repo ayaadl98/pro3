@@ -1,0 +1,641 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;
+}
+ 
+/* Custom artwork, portraits, and totally original paintings and prints to turn your home into a gallery */
+
+
+.icons{
+    position: absolute;
+    position: fixed;
+    z-index: 5;
+    bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    left: 95%;
+    
+    
+   
+}
+
+.icons li a{
+    color:rgb(3, 79, 79)
+}
+.icons li a:hover{
+    color: rgb(5, 161, 161);
+}
+
+
+
+.div11{
+    height: 400px;
+    width: 100%;
+   background-image: url(../images/781B9E1A-8F73-4C61-A618-93E695248F1A.webp);
+   background-attachment: fixed;
+   background-size: cover;
+   
+}
+.div12{
+    height: 400px;
+    width: 100%;
+   background-image: url(../images/il_1588xN.3159311197_i6y1.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+   
+}
+
+.img1,.img2,.img3{
+    background-image: url(../images/548e0cf96ef5a0f7687dacd098893596.jpg);
+    background-size: cover;
+}
+.div13:hover{
+    transform: scale(0.9,0.9);
+    transition: 0.5s;
+}
+.div14:hover{
+    transform: scale(0.90,0.90);
+    transition: 0.5s;
+}
+.div15:hover{
+    transform: scale(0.90,0.90);
+    transition: 0.5s;
+}
+.parent1,.parent2,.parent3,.parent4{
+    background-color: rgb(221, 212, 212); 
+    position: relative;
+    height: 430px;
+   
+}
+.shape2{
+   
+    clip-path: polygon(31% -1%, 100% 0%, 100% 100%, 40% 100%);
+     background-image: url(../images/7b1321163011a2cfcac662cfe943fc19.jpg);
+     background-size: cover;
+     height: 100%;
+     position: absolute;
+     top: 0;
+    right: 0;
+}
+
+.shape1{
+  
+    height:100% ; 
+     clip-path: polygon(-0% -1%, 69% -1%, 62% 102%, 0% 100%);
+     background-image: url(../images/c713de0de6c5e8ed78a38d22e557f7e6.jpg);
+     position: absolute;
+     background-size: cover; 
+     top: 0; 
+   left: 0;
+}
+.shape4{
+   
+    height:100% ; 
+    clip-path: polygon(31% -1%, 100% 0%, 100% 100%, 40% 100%);
+     background-image: url(../images/edf4be6434059fe1d18ffbdb3ddc52bb.jpg);
+     background-size: cover; 
+     position: absolute;
+     top: 0;
+     right: 0;
+}
+
+.shape3{
+   
+    height:100% ; 
+     clip-path: polygon(-0% -1%, 69% -1%, 62% 102%, 0% 100%);
+     background-image: url(../images/58b27939c8f8ec1f30277882d4593748.jpg);
+     background-size: cover;
+     position: absolute;
+     top: 0;
+     left: 0;
+      
+}
+
+@media(max-width:540px){
+    .shape1,.shape2,.shape3,.shape4{
+        height: 150px;
+      clip-path: polygon(-23% -2%, 108% 0%, 113% 107%, -11% 110%);
+      background-size: cover;
+    }
+    .parent1,.parent2,.parent3,.parent4{
+        height: auto;
+        width: 100%;
+        font-size: 12px;
+flex-direction: column-reverse;        
+    }
+    .content p{
+        /* margin-bottom: 10px; */
+        margin-top:20px;
+    }
+    .content .but{
+       margin-bottom: 50px;
+       margin-left: 7px;
+      
+     
+     
+    }
+    .hhhh{
+        margin-top: 120px;
+    }
+}
+
+
+
+.carousel-item img{
+    height: 100vh;
+    
+   
+}
+
+
+
+@media(max-width:540px){
+    .carousel-item img{
+        height: 83vh;
+      
+    }
+    .list{
+        
+       
+        right: 80px;
+    }
+
+    
+}
+
+@media(max-width:540px){
+     .navbar .btn{
+        margin-top: 10px; 
+    }
+    .form-control{
+        margin-top: 10px;
+    }
+    
+    }  
+    .click::before{
+        content: "add to your order";
+        position: absolute;
+        width:150px;
+        height:40px ;
+        background-color:rgb(104, 223, 223) ;
+        bottom:0px ;
+        top: 35px ;
+        left:105px ;
+        display: none;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    .click:hover::before{
+        display: block;
+    }
+    
+    .click::after{
+        content: "added";
+        position: absolute;
+        width:150px;
+        height:40px ;
+        background-color:rgb(104, 223, 223) ;
+        bottom:0px ;
+        top: 35px ;
+        left:105px ;
+        display: none;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+    
+    .click:focus::after{
+        display: block;
+    }
+      
+    
+    
+
+.cart1::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+.cart1:hover::before{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart1::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    bottom: 0;
+    right: 0;
+}
+.cart1:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart2::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+.cart2:hover::before{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart2::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    bottom: 0;
+    right: 0;
+}
+.cart2:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart3::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+.cart3:hover::before{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart3::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    bottom: 0;
+    right: 0;
+}
+.cart3:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart4::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+.cart4:hover::before{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart4::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    bottom: 0;
+    right: 0;
+}
+.cart4:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart5::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+.cart5:hover::before{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart5::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    bottom: 0;
+    right: 0;
+}
+.cart5:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart6::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+.cart6:hover::before{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart6::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    bottom: 0;
+    right: 0;
+}
+.cart6:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart7::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+.cart7:hover::before{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart7::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    bottom: 0;
+    right: 0;
+}
+.cart7:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart8::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    top: 0;
+    left: 0;
+}
+.cart8:hover::before{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.cart8::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(174, 182, 182);
+    transition: 1s;
+    bottom: 0;
+    right: 0;
+}
+.cart8:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+}
+.app1,.app2,.app3,.app4{
+    
+    height:200px ;
+    box-shadow: -10px -5px 15px 5px rgb(177, 166, 166);
+   
+}
+
+.twitter,.whats,.linked,.insta{
+    box-shadow: -2px -2px 25px 10px rgb(166, 174, 177);
+    border-radius: 25px;
+}
+.twitter:hover{
+  background-color: rgba(161, 148, 132);
+  opacity: 0.8;
+ 
+}
+.whats:hover{
+    background-color: rgba(161, 148, 132);
+    opacity: 0.8;  
+}
+.linked:hover{
+    background-color: rgba(161, 148, 132);
+    opacity: 0.8;
+   
+  }
+  .insta:hover{
+    background-color: rgba(161, 148, 132);
+    opacity: 0.8;
+   
+  }
+
+
+.join{
+    font-size: 60px;
+    font-weight: bold;
+    background: linear-gradient(to top,rgb(6, 44, 52),rgb(177, 237, 237));
+    /* background: linear-gradient(to top,white,rgb(6, 183, 218),rgb(223, 122, 186),white); */
+    -webkit-background-clip:text ;
+  -webkit-text-fill-color: transparent;
+   
+    
+}
+.logo{
+    font-weight: bold;
+    background: linear-gradient(to bottom,white,rgb(6, 183, 218),rgb(147, 144, 141),white);
+    -webkit-background-clip:text ;
+  -webkit-text-fill-color: transparent;
+
+}
+.copy{
+    font-weight: bold;
+    background: linear-gradient(to top,white,rgb(6, 183, 218),rgb(226, 92, 177),white);
+    -webkit-background-clip:text ;
+  -webkit-text-fill-color: transparent;
+
+}
+.about{
+    font-weight: bold;
+    background: linear-gradient(to bottom,white,rgb(6, 183, 218),rgb(147, 144, 141),white);
+    -webkit-background-clip:text ;
+  -webkit-text-fill-color: transparent;
+
+
+}
+.link .p1:hover{
+    color: white;
+}
+.link .p2:hover{
+    color: white;
+}
+.link .p3:hover{
+    color: white;
+}
+/* .round2,.round3{
+    background-image: url(../images/548e0cf96ef5a0f7687dacd098893596.jpg);
+    background-size: cover;
+} */
+
+.round1,.round2,.round3{
+    box-shadow: -2px -2px 25px 10px rgb(109, 128, 135);
+}
+.click{
+    position: relative;
+}
+.click::before{
+    content: "add to your order";
+    position: absolute;
+    width:150px;
+    height:40px ;
+    background-color:rgb(104, 223, 223) ;
+    bottom:0px ;
+    top: 35px ;
+    left:105px ;
+    display: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.click:hover::before{
+    display: block;
+}
+
+.click::after{
+    content: "added";
+    position: absolute;
+    width:150px;
+    height:40px ;
+    background-color:rgb(104, 223, 223) ;
+    bottom:0px ;
+    top: 35px ;
+    left:105px ;
+    display: none;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.click:focus::after{
+    display: block;
+}
+.but{
+    background-color: rgb(8, 155, 178);
+    border-radius: 5px;
+    border: 0px;
+}
+
+.but:hover{
+    background-color: rgb(226, 239, 240);
+    
+}
+
+.over1{
+background-color: rgba(0, 0, 0, 0.5);
+}
+.over1:hover{
+    background-color: rgba(3, 46, 51, 0.5);
+}
+.over2{
+    background-color: rgba(0, 0, 0, 0.5);
+    }
+    .over2:hover{
+        background-color: rgba(3, 46, 51, 0.5);
+    }
+    .over3{
+        background-color: rgba(0, 0, 0, 0.5);
+        }
+        .over3:hover{
+            background-color: rgba(3, 46, 51, 0.5);
+        }
+
+       footer{
+            min-height: 370px;
+            
+        }
+
+        .footer-img img{
+            box-shadow: 1px 1px 30px 2px rgb(183, 174, 174);
+        }
+        .line{
+            color: white;
+        }
+
+
+
+
+
+
+
